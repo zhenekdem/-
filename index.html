@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню — PULSE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site">
+    <!--Шапка сайта-->
+    <header class="header">
+        <div class="inner">
+            <!--логотип-->
+            <div class="logo">PULSE.</div>
+            <!-- Навигационное меню -->
+                <nav class="navigation">
+                    <a href="#" class="nav-link">Пространство</a>
+                    <a href="#" class="nav-link">Проекты</a>
+                    <a href="#" class="nav-link">Команды</a>
+                </nav>
+                <!-- Кнопка профиля (на неё будем кликать) -->
+                 <button class="profile-trigger" id="profileBtn">
+                    <img src="img/img.png" alt="фото" class="mini-avatar">
+                    <span class="name">Антон</span>
+                 </button>
+        </div>
+    </header>
+    <!-- Выпадающее меню лежит отдельно между шапкой и контентом -->
+     <div class="menu" id="dropdownMenu">
+        <div class="user-box">
+            <img src="img/img.png" alt="Антон" class="menu-avatar">
+            <div class="user-text">
+                <p class="user-fullname">Антон Смирнов</p>
+                <p class="user-role">Креативный директор</p>
+            </div> 
+        </div>
+        <!-- Список действий (items) -->
+            <a href="#" class="item white">Профиль</a>
+            <a href="#" class="item yellow">Уведомления<span class="badge">8</span></a>
+            <a href="#" class="item blue">Внешний вид</a>
+            <a href="#" class="item orange">Оплата</a>
+            <a href="#" class="item purple">Выйти</a>
+    </div>
+     <!-- ГЛАВНЫЙ КОНТЕНТ СТРАНИЦЫ -->
+      <main class="content-section">
+        <!--Общий контейнер-->
+        <div class="main-inner">
+            <!--левая часть-->
+            <div class="main-left">
+                <h1 class="headline">ТВОРИ<br>БЕЗ<br>ЛИМИТОВ</h1>
+                <p class="banner-text">Идеи заслуживают смелого воплощения. Сотрудничайте со своей командой, черпайте вдохновение и выполняйте творческую работу быстрее.</p>
+                <button class="banner-btn">Начать проект</button>
+            </div>
+            <!--правая часть-->
+            <div class="main-right">
+                <!-- Первая карточка -->
+                <div class="stat-card">
+                    <p class="stat-number">52</p>
+                    <p class="stat-label">Активных проектов</p>
+                </div>
+                 <!-- Вторая карточка -->
+                <div class="stat-card">
+                    <p class="stat-number">18</p>
+                    <p class="stat-label">Новых команд онлайн</p>
+                </div>
+                <!-- Третья карточка -->
+                <div class="stat-card">
+                    <p class="stat-number">92%</p>
+                    <p class="stat-label">Успешных релизов закрыто</p>
+                </div>
+            </div>
+        </div>
+      </main>
+    </div>  
+      <script src="js/script.js"></script>
+</body>
+</html>
